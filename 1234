@@ -1,0 +1,77 @@
+# задача 1
+# Your code ggoes here
+def vowels_in_str(text):
+    vowels = ["a", "e", "i", "o", "u"]
+    count = 0
+    for i in text:
+        if i in vowels:
+            count+=1
+    return count
+
+text = str(input())
+vowels_in_str(text)
+
+
+
+
+
+
+
+
+# Your code goes here
+
+def single_character(text):
+    split_text = [x for x in text]
+    slov = dict.fromkeys(split_text, 0)
+    flag = True
+    
+    for i in split_text:
+        if i in slov:
+            slov[i] += 1
+    print(slov)
+
+    for i in slov:
+        if slov[i] == 1:
+            flag = True
+        else:
+            flag = False
+            break
+            
+    return flag
+    
+text = input()
+single_character(text)
+
+
+
+
+
+
+
+
+
+chisl = bin(int(input()))[2:]
+count = 0
+for i in chisl:
+    if i == "1":
+        count += 1
+print(count)
+
+
+
+
+
+
+
+
+
+def magic(n):
+    n = str(n)
+    # Your code goes here
+    split_n = [int(x) for x in n]
+    for len(split_n):
+        
+    print(split_n)
+
+magic(39)
+   
